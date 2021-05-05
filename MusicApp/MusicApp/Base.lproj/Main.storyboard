@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VvN-h4-naE">
+    <device id="retina6_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="0Qf-Er-mBy">
+            <objects>
+                <navigationController id="VvN-h4-naE" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="K5s-5f-dtI">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="R7V-fR-Hbw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dGo-sH-AWJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-607" y="123"/>
+        </scene>
+        <!--Home Screen-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="HomeScreen" customModule="MusicApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="AcC-28-4tJ">
+                                <rect key="frame" x="50" y="88" width="314" height="696"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="dO0-ZK-Gtw">
+                                        <rect key="frame" x="0.0" y="0.0" width="314" height="350"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="abbacover.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="965-3K-OLI">
+                                                <rect key="frame" x="0.0" y="0.0" width="314" height="350"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="350" id="RZ8-7P-5R0"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="cre-Eh-W1b">
+                                        <rect key="frame" x="0.0" y="370" width="314" height="326"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K3j-FL-51Q">
+                                                <rect key="frame" x="0.0" y="0.0" width="314" height="42.666666666666664"/>
+                                                <state key="normal" title="Mamma Mia">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="jq6-wA-1wk" kind="show" identifier="GoToSongMammaMia" id="RUP-2i-MfC"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oBG-FM-gU3">
+                                                <rect key="frame" x="0.0" y="52.666666666666686" width="314" height="42.333333333333343"/>
+                                                <state key="normal" title="SOS">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="jq6-wA-1wk" kind="show" identifier="GoToSongSOS" id="Hav-cy-OpK"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DGm-F1-NMs">
+                                                <rect key="frame" x="0.0" y="105" width="314" height="42.666666666666657"/>
+                                                <state key="normal" title="So Long">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="jq6-wA-1wk" kind="show" identifier="GoToSongSoLong" id="izc-2Q-ldl"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wFq-DR-KbQ">
+                                                <rect key="frame" x="0.0" y="157.66666666666663" width="314" height="42.333333333333343"/>
+                                                <state key="normal" title="I Do I Do I Do I Do I Do">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="jq6-wA-1wk" kind="show" identifier="GoToSongIDo" id="QmB-G6-jo6"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xYT-sK-95P">
+                                                <rect key="frame" x="0.0" y="210" width="314" height="42.666666666666657"/>
+                                                <state key="normal" title="Rock Me">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="jq6-wA-1wk" kind="show" identifier="GoToSongRockMe" id="9Va-Ho-CST"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mDY-vy-YVN">
+                                                <rect key="frame" x="0.0" y="262.66666666666663" width="314" height="63.333333333333314"/>
+                                                <state key="normal" title="I've Been Waiting For You">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="jq6-wA-1wk" kind="show" identifier="GoToSongWaiting" id="b3d-hn-x1U"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="dO0-ZK-Gtw" secondAttribute="trailing" id="Nr4-SV-7xG"/>
+                                    <constraint firstItem="cre-Eh-W1b" firstAttribute="top" secondItem="dO0-ZK-Gtw" secondAttribute="bottom" constant="20" id="cPC-yP-zDb"/>
+                                    <constraint firstItem="dO0-ZK-Gtw" firstAttribute="leading" secondItem="AcC-28-4tJ" secondAttribute="leading" id="oTV-rR-WNb"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.044800110161304474" green="0.52347272634506226" blue="0.87514811754226685" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AcC-28-4tJ" secondAttribute="trailing" constant="50" id="4vh-Hp-pv4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="AcC-28-4tJ" secondAttribute="top" id="iZc-1s-x2s"/>
+                            <constraint firstItem="AcC-28-4tJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="peO-Qp-ruD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="AcC-28-4tJ" secondAttribute="bottom" constant="29" id="tT1-Od-kzt"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="jB9-rl-Tub"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="IDoIDoIDoIDoIDo" destination="wFq-DR-KbQ" id="dRi-90-J0f"/>
+                        <outlet property="IveBeenWaitingForYou" destination="mDY-vy-YVN" id="xKg-uM-P4N"/>
+                        <outlet property="MammaMia" destination="K3j-FL-51Q" id="cNm-bE-vmM"/>
+                        <outlet property="RockMe" destination="xYT-sK-95P" id="nWA-mT-QLd"/>
+                        <outlet property="SOS" destination="oBG-FM-gU3" id="3zt-MY-d47"/>
+                        <outlet property="SoLong" destination="DGm-F1-NMs" id="vpN-Tx-Vt3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="155.07246376811597" y="123.21428571428571"/>
+        </scene>
+        <!--Song Screen-->
+        <scene sceneID="fbG-AD-GLz">
+            <objects>
+                <viewController id="jq6-wA-1wk" customClass="SongScreen" customModule="MusicApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Hbc-Qg-8qL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="QOf-ni-HhM">
+                                <rect key="frame" x="50" y="88" width="314" height="725"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="abbacover.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="oiM-ss-m8H">
+                                        <rect key="frame" x="0.0" y="0.0" width="314" height="350"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="350" id="dfu-zs-CF5"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Song title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cen-R3-daG">
+                                        <rect key="frame" x="120.66666666666666" y="396.33333333333331" width="72.666666666666657" height="20.333333333333314"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="0w3-LS-pnV">
+                                        <rect key="frame" x="0.0" y="462.66666666666663" width="314" height="2"/>
+                                        <color key="progressTintColor" red="0.0" green="1" blue="0.12173247130000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="trackTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </progressView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pvb-kD-hez">
+                                        <rect key="frame" x="140" y="511" width="34" height="18"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gxg-uG-cw9" userLabel="Play/Pause">
+                                        <rect key="frame" x="82" y="575" width="150" height="150"/>
+                                        <color key="backgroundColor" red="0.061537228524684906" green="0.10272166877985001" blue="0.85389703512191772" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150" id="rr9-XK-kl4"/>
+                                            <constraint firstAttribute="height" constant="150" id="uej-xm-gTU"/>
+                                        </constraints>
+                                        <state key="normal" title="Play" image="playButton.png"/>
+                                        <connections>
+                                            <action selector="playSong:" destination="jq6-wA-1wk" eventType="touchUpInside" id="f86-UP-0Ld"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="QOf-ni-HhM" firstAttribute="leading" secondItem="GHO-Yb-Aju" secondAttribute="leading" constant="50" id="VMa-tW-NKN"/>
+                            <constraint firstItem="GHO-Yb-Aju" firstAttribute="trailing" secondItem="QOf-ni-HhM" secondAttribute="trailing" constant="50" id="czt-bP-pLu"/>
+                            <constraint firstItem="QOf-ni-HhM" firstAttribute="top" secondItem="GHO-Yb-Aju" secondAttribute="top" id="sgv-Y0-IXN"/>
+                            <constraint firstItem="GHO-Yb-Aju" firstAttribute="bottom" secondItem="QOf-ni-HhM" secondAttribute="bottom" id="zjW-ik-3EM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="GHO-Yb-Aju"/>
+                    </view>
+                    <connections>
+                        <outlet property="progressBar" destination="0w3-LS-pnV" id="beD-IL-GXd"/>
+                        <outlet property="songTitle" destination="Cen-R3-daG" id="CYy-Rh-tLe"/>
+                        <outlet property="timerLabel" destination="pvb-kD-hez" id="Qaw-ay-Aqa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mby-MA-DAb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="911.59420289855075" y="123.21428571428571"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="abbacover.jpg" width="550" height="482"/>
+        <image name="playButton.png" width="512" height="512"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="izc-2Q-ldl"/>
+    </inferredMetricsTieBreakers>
+</document>
